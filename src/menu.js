@@ -26,7 +26,8 @@ export default function loadMenu() {
     content.appendChild(heading);
 
     menuItems.forEach((item) => {
-        const itemDiv = document.createElement("div");
+    const itemDiv = document.createElement("div");
+    itemDiv.classList.add("menu-item");  
 
         const name = document.createElement("h2");
         name.textContent = item.name;

@@ -18,9 +18,14 @@ export default function loadContact() {
     hours.textContent =
         "🕒 Opening Hours: Monday - Sunday, 10:00 AM - 10:00 PM";
 
-    content.appendChild(heading);
-    content.appendChild(phone);
-    content.appendChild(email);
-    content.appendChild(address);
-    content.appendChild(hours);
+ const contactCard = document.createElement("div");
+contactCard.classList.add("contact-card");
+
+contactCard.appendChild(phone);
+contactCard.appendChild(email);
+contactCard.appendChild(address);
+contactCard.appendChild(hours);
+
+content.appendChild(heading);
+content.appendChild(contactCard);
 }

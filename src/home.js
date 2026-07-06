@@ -8,6 +8,8 @@ export default function loadHome() {
     image.src =
         "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800";
     image.alt = "Restaurant interior";
+    heading.classList.add("hero-title");
+    image.classList.add("hero-image"); 
 
     const paragraph1 = document.createElement("p");
     paragraph1.textContent =
